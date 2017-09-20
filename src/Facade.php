@@ -8,7 +8,7 @@ use Illuminate\Support;
  *
  * @method static Atlas model($class) Get a model helper class.
  */
-class Facade extends Support\Facades\Facade\Facade
+class Facade extends Support\Facades\Facade
 {
     /**
      * Get the registered name of the component.
