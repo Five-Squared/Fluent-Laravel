@@ -3,12 +3,13 @@
 namespace Fluent\Laravel;
 
 use Fluent;
+use Illuminate\Support;
 use Illuminate\Foundation\Application as LaravelApplication;
 
 /**
  * Fluent service provider
  */
-class ServiceProvider extends Illuminate\Support\ServiceProvider
+class ServiceProvider extends Support\ServiceProvider
 {
     const VERSION = '3.2.0';
 
