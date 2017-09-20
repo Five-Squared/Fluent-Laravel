@@ -47,7 +47,7 @@ class ServiceProvider extends Support\ServiceProvider
 
         $this->app->singleton('fluent', function ($app) {
             $config = $app->make('config')->get('fluent');
-            return new Fluent($config);
+            return new Factory($config);
         });
 
         $this->app->alias('fluent', 'Fluent');
