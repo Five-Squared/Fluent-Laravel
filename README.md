@@ -1,5 +1,5 @@
 # Fluent-Laravel
-Fluent package for Laravel
+Fluent package for Laravel 5.5
 
 ### Install ###
 ```

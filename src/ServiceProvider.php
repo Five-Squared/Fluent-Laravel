@@ -51,6 +51,10 @@ class ServiceProvider extends Support\ServiceProvider
         });
 
         $this->app->alias('fluent', 'Fluent');
+
+        $this->commands([
+            Console\Test::class,
+        ]);
     }
 
     /**
