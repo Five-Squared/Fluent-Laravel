@@ -13,15 +13,21 @@ For Laravel 5.5 and later a facade and service provider will be auto-discovered 
 php artisan fluent:test me@mydomain.com
 ```
 
+Using it in the app: 
+
 ```
-/* Using the facade to build notifications on the fly */
+
+/* Using the facade to build and send notifications on the fly */
+
 Route::get('/notification/send/{address}', function ($address) {
-    return \Fluent::message()->create()
+    $messageId = \Fluent::message()->create()
         ->setTitle('My Laravel Message')
         ->addParagraph('Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
         ->to($address)
         ->subject('Testing from Laravel')
         ->send();
+
+    return "Message has been sent - {$messageId}";
 });
 ```
 
