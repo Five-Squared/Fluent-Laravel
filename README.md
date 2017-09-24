@@ -8,12 +8,12 @@ composer require fivesqrd/fluent-laravel
 
 For Laravel 5.5 and later a facade and service provider will be auto-discovered and you should be set to go:
 ```
-Route::get('/notification/send/{email}', function ($email) {
+Route::get('/notification/send/{address}', function ($address) {
     return \Fluent::message()->create()
         ->setTitle('My Laravel Message')
         ->addParagraph('Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
-        ->to($email)
-        ->subject('Testing it')
+        ->to($address)
+        ->subject('Testing from Laravel')
         ->send();
 });
 ```
