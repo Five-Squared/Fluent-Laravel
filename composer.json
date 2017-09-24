@@ -12,7 +12,8 @@
     ],
     "require": {
         "php": ">=5.5.9",
-        "fivesqrd/fluent": "~3.3"
+        "fivesqrd/fluent": "~3.3",
+        "laravel/framework": "5.5.*"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0|~5.0"
