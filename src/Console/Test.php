@@ -45,6 +45,6 @@ class Test extends Command
             ->subject('Test from Laravel')
             ->send();
 
-        $this->info("Test message sent to {$this->argument('address')} - message id is: {$messageId}");
+        $this->info("Test message sent to {$this->argument('address')} - message id is {$messageId}");
     }
 }

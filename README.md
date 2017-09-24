@@ -7,7 +7,14 @@ composer require fivesqrd/fluent-laravel
 ```
 
 For Laravel 5.5 and later a facade and service provider will be auto-discovered and you should be set to go:
+
 ```
+#Send a test message
+php artisan fluent:test me@mydomain.com
+```
+
+```
+/* Using the facade to build notifications on the fly */
 Route::get('/notification/send/{address}', function ($address) {
     return \Fluent::message()->create()
         ->setTitle('My Laravel Message')
