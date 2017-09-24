@@ -1,6 +1,6 @@
 <?php
 
-namespace Fluent\Laraval\Console;
+namespace Fluent\Laravel\Console;
 
 use Illuminate\Console\Command;
 use Config;
