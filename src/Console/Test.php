@@ -39,8 +39,8 @@ class Test extends Command
     public function handle()
     {
         $messageId = \Fluent::message()->create()
-            ->setTitle('My Laravel Message')
-            ->addParagraph('Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
+            ->title('My Laravel Message')
+            ->paragraph('Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
             ->to($this->argument('address'))
             ->subject('Test from Laravel')
             ->send();

@@ -12,7 +12,7 @@
     ],
     "require": {
         "php": ">=5.5.9",
-        "fivesqrd/fluent": "3.4.*",
+        "fivesqrd/fluent-client": "4.*",
         "laravel/framework": "5.5.*"
     },
     "require-dev": {
