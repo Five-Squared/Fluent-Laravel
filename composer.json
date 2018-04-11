@@ -3,7 +3,6 @@
     "description": "A Laravel 5 service provider for including the Fluent PHP library.",
     "keywords": ["laravel", "laravel 5"],
     "type":"library",
-    "license":"MIT",
     "authors":[
         {
             "name":"Five Squared",
@@ -12,7 +11,7 @@
     ],
     "require": {
         "php": ">=5.5.9",
-        "fivesqrd/fluent-frontier": "1.*",
+        "fivesqrd/fluent-classic": "3.2.*",
         "laravel/framework": "5.5.*"
     },
     "require-dev": {
