@@ -12,7 +12,7 @@
     "require": {
         "php": ">=5.5.9",
         "fivesqrd/fluent-classic": "3.*",
-        "laravel/framework": "5.5.*"
+        "laravel/framework": ">=5.5.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0|~5.0"
