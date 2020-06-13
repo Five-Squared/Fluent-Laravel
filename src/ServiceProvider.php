@@ -29,7 +29,7 @@ class ServiceProvider extends Support\ServiceProvider
     {
         /* Path to default config file */
         $this->publishes([
-            dirname(__DIR__) . '/config/fluent.php' => config_path('fluent.php')
+            realpath(__DIR__ . '/../config/fluent.php') => config_path('fluent.php')
         ]);
 
     }
@@ -42,7 +42,7 @@ class ServiceProvider extends Support\ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            dirname(__DIR__) . '/config/fluent.php', 'fluent'
+            realpath(__DIR__ . '/../config/fluent.php'), 'fluent'
         );
 
         $this->app->singleton('fluent', function ($app) {
