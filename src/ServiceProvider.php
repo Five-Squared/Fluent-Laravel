@@ -45,7 +45,7 @@ class ServiceProvider extends Support\ServiceProvider
             realpath(__DIR__ . '/../config/fluent.php'), 'fluent'
         );
 
-        $this->app->singleton('fluent', function ($app) {
+        $this->app->singleton('Fluent', function ($app) {
             $config = $app->make('config')->get('fluent');
             return new Factory($config);
         });

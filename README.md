@@ -1,5 +1,5 @@
 # Fluent-Laravel
-Fluent package for Laravel 5.5
+Fluent package for Laravel 5.5+
 
 ### Install ###
 ```
@@ -20,9 +20,9 @@ Using it in the app:
 /* Using the facade to build and send notifications on the fly */
 
 Route::get('/notification/send/{address}', function ($address) {
-    $messageId = \Fluent::message()->create()
-        ->setTitle('My Laravel Message')
-        ->addParagraph('Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
+    $messageId = resolve('Fluent')->message()->create()
+        ->title('My Laravel Message')
+        ->paragraph('Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
         ->to($address)
         ->subject('Testing from Laravel')
         ->send();
